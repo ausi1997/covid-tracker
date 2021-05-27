@@ -1,0 +1,15 @@
+.box{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.box-inner{
+  background-color: rgb(255, 251, 244);
+  width: 500px;
+  text-align: center;
+  font-size: larger;
+  padding: 5px;
+  color: #777
+
+}
