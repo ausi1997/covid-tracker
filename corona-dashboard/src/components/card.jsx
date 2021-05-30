@@ -11,7 +11,7 @@ const Cards =({data})=>{
     return(
         <div>
         <Box className='card-box'>
-        <Typography variant="h4" gutterBottom>Coronavirus Cases Globally</Typography>
+        <Typography className='heading' variant="h4" gutterBottom>Coronavirus Cases Globally</Typography>
         <Grid container spacing={3} justify='center'>
         <SingleCard cardTitle='Infected' value={data.confirmed.value} desc='Number of Infected cases of covid-19'
          lastUpdate={data.lastUpdate}>

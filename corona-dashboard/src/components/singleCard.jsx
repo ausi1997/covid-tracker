@@ -12,7 +12,7 @@ const SingleCard = ({cardTitle,value,desc,lastUpdate})=>{
         <Typography variant='h5'>
         <Countup start={0} end={value} duration={3} separator=','></Countup>
         </Typography>
-        <Typography>{desc}</Typography>
+        <Typography color='textSecondary'>{desc}</Typography>
         <Typography>{lastUpdate && new Date(lastUpdate).toDateString()}</Typography>
         </CardContent>
        
