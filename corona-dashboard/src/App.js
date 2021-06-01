@@ -5,7 +5,7 @@ import Cards from './components/card';
 import './App.css';
 import {FetchData} from './service/api';
 import Country from './components/country';
-
+import Chart from './components/chart';
 function App() {
 
   const [data , setData] = useState([]);
@@ -23,6 +23,7 @@ function App() {
     <img style={{width:450}} src={logo} alt="covid"></img>
     <Cards data = {data}></Cards>
     <Country></Country>
+    <Chart data={data}></Chart>
     </Box>
     </div>
   );
