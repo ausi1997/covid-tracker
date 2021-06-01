@@ -1,9 +1,11 @@
 import React from 'react';
 import {Bar} from 'react-chartjs-2';
+import {Box} from '@material-ui/core';
 
 const Chart = ({data:{confirmed,recovered,deaths}})=>{
     return(
         confirmed ? (
+            <Box className='graph'>
         <Bar
         data = {{
             labels: ['Infected', 'Recovered', 'Deaths'],
@@ -21,7 +23,8 @@ const Chart = ({data:{confirmed,recovered,deaths}})=>{
             legend: {display:false},
                 title:{display:true, text:'Current state in Country'}
         }}
-        /> ) : ''
+        />
+        </Box> ) : ''
     )
 }
 
